@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <!-- here i use google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <style>
+        #discal{
+            font-family: 'Roboto Slab', serif;
+            text-align: center;
+        margin-right: 23px;    
+        }
+
+        #para{
+            font-family: 'Amita', cursive;
+            margin-left: 20px;
+        }
+
+        #billamu{
+            width: 500px;
+            height: 20px;
+            margin-left: 20px;
+        }
+
+        #disamu{
+            border-radius: 50px;
+            border-color: rgb(255, 22, 5);
+            width: 500px;
+            height: 20px;
+            margin-left: 20px;
+        }
+
+    #div1{
+        /* here i use position property */
+        width: 600px;
+        height: 400px;
+        background-color: rgb(177, 177, 80);
+        display: inline-block;
+        border: 2px solid brown;
+        position: relative;
+        left: 400px;
+        top: 100px
+        }
+
+        #calculate{
+            background-color: coral;
+            border-radius: 20px;
+            width: 350px;
+            height: 40px;
+            margin-left: 100px;
+            margin-top: 20px;
+            font-size: larger;
+        }
+       
+</style>
+</head>
+<body>
+    <div id="div1">
+        <h1 id="discal">DISCOUNT CALCULATOR</h1>
+        <p id="para"><b>Enter the Bill amount and discount in percentage</b></p>
+        <p id="para"><b>Bill Amount</b></p>
+        <label for="Bill Amount"</label>
+        <input type="tel" id="billamu" name="bill amount" placeholder="enter your bill amount">
+        <p id="para"><b>Discount Percentage</b></p>
+        <label for="Discount Percentage"</label>
+            <input type="number" id="disamu" name="Discount Percentage" placeholder="enter your Discount percentage">
+            <button type="submit" id="calculate">calculate</button>
+            <p id="para"><b>Total Discount Amount</b></p>
+            <!-- <button type="submit" class="cal">calculate</button> -->
+    </div>
+</body>
+</html>
