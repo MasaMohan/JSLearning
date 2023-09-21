@@ -1,0 +1,41 @@
+
+
+
+var age = 32;
+console.log(typeof age);
+
+var price = 34.678;
+console.log(price,typeof price);
+var firstName = "Mohan";
+console.log(typeof firstName);
+
+var city = "Pune";
+console.log("city=>" ,city, "data type==>" ,typeof city);
+
+var isMarried = true;
+console.log(isMarried, typeof isMarried);
+
+var isHandicap = false;
+console.log(isHandicap, typeof(isHandicap));
+
+// Primitive Data Type
+console.log(typeof "I love only Jesus"); //string
+console.log(typeof 201456); //number
+console.log(typeof false); //boolean
+
+console.log("--------nulls vs undefined-------");
+var accountNumber;
+console.log(accountNumber);
+accountNumber = null;
+console.log(accountNumber);
+
+var friendsCount = 7;
+console.log(friendsCount, typeof friendsCount);
+friendsCount = "seven"
+console.log(friendsCount, typeof friendsCount);
+
+//javaScript is a loosely
+
+accountNumber = null;
+console.log(typeof accountNumber);
+
