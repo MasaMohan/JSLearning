@@ -35,6 +35,7 @@ console.log("undefined=Variable is declare but value not initialization");
 console.log("========null========");
 console.log("null=value is given to variable when we want to keep value as a empty ");
 
+console.log("=======Assignment Done======");
 
 
 
