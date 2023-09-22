@@ -12,7 +12,7 @@ console.log("Marks:-90%",mark,typeof mark);
 
 var stay 
 console.log(typeof stay);
-stay = empty;
+stay = ;
 console.log(stay);
 
 
