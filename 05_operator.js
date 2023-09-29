@@ -1,3 +1,27 @@
+
+
+
+console.log(`===== 1.Arithmetic Operator =====`);
+
+// + - *
+
+var num1 = 10;
+var num2 = 2;
+var result = num1 * num2;
+console.log(` Multiplication result is: ${result}`);
+
+var result = num1 ** 3;
+console.log(` Exponential result is: ${result}`);
+
+var result = num1/num2;
+console.log(`Division result is: ${result}`);
+
+var result = num1%num2;
+console.log(`Modulus result is: ${result}`);
+
+console.log(15 % 4);
+
+
 console.log("====== Unary Operator =========");
 var num1 = 10;
 // var result = num1++; // var result = num1 + 1;
@@ -56,6 +80,11 @@ console.log(`Result of Greater than > is: ${result}`);
 var result = num3 >= num4;
 console.log(`Result of Greater than equal > is: ${result}`);
 
+// AND &&
+// OR ||
+// NOT !
+// Jenny sscMarks = 61 OR hscMarks = 39
+// sscMarks greater than equal 60 AND hscMarks also greater than equal 60
 var result = 10 < num4;
 console.log(`Result of Less than < is: ${result}`);
 
