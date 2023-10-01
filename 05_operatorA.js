@@ -40,8 +40,6 @@ var multiplied = 22/4;
 console.log(`Divided total number of words s:-${multiplied}`);
 
 
-// var multiplied = 22*4;
-// console.log(`Multiplied `);
 } 
 react();
 
