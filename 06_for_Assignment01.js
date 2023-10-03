@@ -1,18 +1,23 @@
 
 
-
+var result = " ";
  for (let index = 5; index <=15; index++) {
-   console.log(index);
-    
+//    console.log(index);
+    result = result + index + " ";
  }
+ console.log(result);
+
 
  console.log(`========================================
  `);
 
+ var result = "";
  for (let index = 50; index >=40; index--) {
-   console.log(index);
+    result = result + index + " ";
     
  }
+ console.log(result);
+
  
  console.log(`========================================
  `);
