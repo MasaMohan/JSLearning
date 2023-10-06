@@ -1,7 +1,7 @@
 
 
 
-function countCharA(inputString) {
+function countCharA(inputString){
   let count = 0;
   for (let index = 0; index < inputString.length; index++) {
     if (inputString[index] === 'a' || inputString[index] === 'A') {
