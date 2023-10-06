@@ -76,3 +76,4 @@ for (let index = 0; index < str.length-1; index++) {
 }
 
 console.log(`Total number of vowels are: ${count}`);
+
