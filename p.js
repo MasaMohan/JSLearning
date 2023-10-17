@@ -1,31 +1,92 @@
-var arrayFruits = ["Banana","Orange","Apple","Mango","Water Melon"];
-console.log("Log first and last element : ",arrayFruits[0],arrayFruits[arrayFruits.length-1]);   
-console.log("====================================");
-console.log("Add Papaya element before the Banana :");
-arrayFruits.unshift("Papaya");
-console.log(arrayFruits);
-console.log("====================================");
-console.log("Remove Mango from the array :");
- arrayFruits.splice(4,1)
-console.log(arrayFruits);
-console.log("====================================");
-console.log("Add Pineapple element at last position :");
-arrayFruits.push("Pineapple");
-console.log(arrayFruits);
-console.log("====================================");
-console.log("Insult Dragon fruit element before Water melan :");
-arrayFruits.splice(4,0,"Dragon fruit")
-console.log(arrayFruits);
-console.log("====================================");
-console.log("Replace Orange with Kiwi : ");
-arrayFruits.splice(2,1,"kivi");
-console.log(arrayFruits);
-console.log("====================================");
-console.log("elements starting from the 1 to 4");
-var ele = arrayFruits.slice(1,4)
-console.log(ele);
-console.log("====================================");
-console.log("Only select last 3 elements & log on console :");
-var arrayFruits = ["Papaya","Banana","Kivi","Apple","Dragon fruits","Water Melon","Pineapple"];
-const arraySliced = arrayFruits.slice(4)
-console.log(arraySliced);
+const arrayNumber = [20,31,40,25,23,11,29,9,60,2,11];
+console.log(arrayNumber);
+console.log("--------------------------------------------------------------------------------------------------------");
+console.log("==========================Q1=============");
+arrayNumber.length;
+console.log(`Total total elements in array : ${arrayNumber.length}`);
+
+console.log("==========================Q2=============");
+console.log(`first Element :  ${arrayNumber[0]}`);
+console.log(`last Element : ${arrayNumber[10]}`);
+
+console.log("==========================Q3=============");
+const thirdToLastElement = arrayNumber[arrayNumber.length - 3];
+console.log('Third to last element:', thirdToLastElement);
+
+console.log("==========================Q4=============");
+evenNumbers = [];
+for (let i = 0; i < arrayNumber.length; i++) {
+  if (arrayNumber[i] % 2 == 0) {
+    evenNumbers.push(arrayNumber[i]);
+  }
+}
+console.log('Even numbers:', evenNumbers);
+
+console.log("==========================Q5=============");
+const oddNumbers = [];
+
+for (let i = 0; i < arrayNumber.length; i++) {
+  if (arrayNumber[i] % 2 !== 0) {
+    oddNumbers.push(arrayNumber[i]);
+  }
+}
+console.log('Odd numbers:', oddNumbers);
+
+console.log("==========================Q6=============");
+
+let sum = 0;
+for (let i = 0; i < arrayNumber.length; i++) {
+  if (arrayNumber[i] % 2 === 0) {
+    sum += arrayNumber[i];
+  }
+}
+console.log('Even numbers sum:',sum);
+
+console.log("==========================Q7=============");
+var addodd = 0;
+for (let i = 0; i < arrayNumber.length; i++) {
+    if (arrayNumber[i] % 2 !== 0){
+        addodd += arrayNumber[i]
+    }
+    }
+    console.log(`odd numbers sum:${addodd}`);
+
+console.log("==========================Q8=============");
+var add = 0;
+for (let index = 0; index < arrayNumber.length; index++) {
+    add += arrayNumber[index];
+}
+console.log(`sum of all elements${add}`);
+
+console.log("==========================Q9=============");
+const multiplesOfFive = [];
+for (let i = 0; i < arrayNumber.length; i++) {
+  if (arrayNumber[i] % 5 === 0) {
+    multiplesOfFive.push(arrayNumber[i]);
+  }
+}
+console.log('Numbers that are multiples of 5:', multiplesOfFive);
+
+console.log("==========================Q10=============");
+let num = 115;
+if (arrayNumber.includes(num)){
+  console.log(`number ${num}is in array`);
+}else{
+  console.log(`number ${num} is not in array`);
+}
+
+console.log("==========================Q11=============");
+let num2 = 23;
+if (arrayNumber.includes(num2)){
+  console.log(`number ${num2} is in array`);
+}else{
+  console.log(`number ${num2} is not in array`);
+}
+
+console.log("==========================Q12=============");
+arrayNumber.splice(3,0,55,56)
+console.log(arrayNumber);
+
+console.log("==========================Q13=============");
+arrayNumber.splice(4,3)
+console.log(arrayNumber);
