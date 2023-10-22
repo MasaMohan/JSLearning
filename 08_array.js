@@ -212,6 +212,26 @@ for (const iterator of arrayN22) {
 }
 
 
+console.log(`join method`);
+const joinElement = arrayN22.join("_");
+console.log(joinElement
+    );
+
+console.log(`Resizing an array`);
+var arrayN22 =[22,11,44,55,77,33];
+arrayN22.length = 3;
+console.log(arrayN22);
+
+console.log(`concat()method`);
+let array1 = [1,2,3];
+let array2 = [4,5];
+let array3 = array1.concat(array2);
+console.log(array3);
+
+
+
+
+
 
 
 

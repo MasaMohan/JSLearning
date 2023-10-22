@@ -1,92 +1,48 @@
-const arrayNumber = [20,31,40,25,23,11,29,9,60,2,11];
-console.log(arrayNumber);
-console.log("--------------------------------------------------------------------------------------------------------");
-console.log("==========================Q1=============");
-arrayNumber.length;
-console.log(`Total total elements in array : ${arrayNumber.length}`);
+let professor={
+  name:"Sir Gajanan",
+  age:35,
+  subject:"FrontEnd Development",
+  className:"CodeMind",
+  teachingAbility:"Superb",
 
-console.log("==========================Q2=============");
-console.log(`first Element :  ${arrayNumber[0]}`);
-console.log(`last Element : ${arrayNumber[10]}`);
-
-console.log("==========================Q3=============");
-const thirdToLastElement = arrayNumber[arrayNumber.length - 3];
-console.log('Third to last element:', thirdToLastElement);
-
-console.log("==========================Q4=============");
-evenNumbers = [];
-for (let i = 0; i < arrayNumber.length; i++) {
-  if (arrayNumber[i] % 2 == 0) {
-    evenNumbers.push(arrayNumber[i]);
-  }
 }
-console.log('Even numbers:', evenNumbers);
-
-console.log("==========================Q5=============");
-const oddNumbers = [];
-
-for (let i = 0; i < arrayNumber.length; i++) {
-  if (arrayNumber[i] % 2 !== 0) {
-    oddNumbers.push(arrayNumber[i]);
-  }
+console.log(`(01===>) Object:professor=======================================================`);
+console.log(professor);
+console.log(`(02===>)Adding 'degree' object into 'professor object================================='`);
+professor.degree={
+  engineering:"CSC",
+  PHD:"Adv Computing",
+  MTech:"CSC",
 }
-console.log('Odd numbers:', oddNumbers);
+console.log(professor.degree);
 
-console.log("==========================Q6=============");
+console.log(`(03===>)Adding array "certificates" into object 'professor===================='`);
 
-let sum = 0;
-for (let i = 0; i < arrayNumber.length; i++) {
-  if (arrayNumber[i] % 2 === 0) {
-    sum += arrayNumber[i];
-  }
+professor.certificates=["Hacker Rank Participation","Certification in IFE Course","Certification in Adv Programming"];
+console.log(professor.certificates);
+
+console.log(`(04===>)Adding new property totalExperience:"14 Years"=====================`);
+professor.totalExperience="14 Years";
+console.log(professor.totalExperience);
+
+console.log(`(05===>) Modifying age property=============== `);
+professor.age=30;
+console.log(professor.age);
+
+console.log(`(06===>)Adding new certificate at last of array========`);
+professor.certificates.push("Oracle Certified");
+console.log(professor.certificates);
+
+console.log(`(07===>) Log the last element of certificate array=========`);
+
+let index=professor.certificates.length;
+console.log(professor.certificates[index-1]);
+
+console.log(`(08====>)Log complete Object============================`);
+console.log(professor);
+
+console.log(`Traverse array --> certificates using for of loop=============`);
+
+for(const element of professor.certificates){
+  console.log(element);
 }
-console.log('Even numbers sum:',sum);
-
-console.log("==========================Q7=============");
-var addodd = 0;
-for (let i = 0; i < arrayNumber.length; i++) {
-    if (arrayNumber[i] % 2 !== 0){
-        addodd += arrayNumber[i]
-    }
-    }
-    console.log(`odd numbers sum:${addodd}`);
-
-console.log("==========================Q8=============");
-var add = 0;
-for (let index = 0; index < arrayNumber.length; index++) {
-    add += arrayNumber[index];
-}
-console.log(`sum of all elements${add}`);
-
-console.log("==========================Q9=============");
-const multiplesOfFive = [];
-for (let i = 0; i < arrayNumber.length; i++) {
-  if (arrayNumber[i] % 5 === 0) {
-    multiplesOfFive.push(arrayNumber[i]);
-  }
-}
-console.log('Numbers that are multiples of 5:', multiplesOfFive);
-
-console.log("==========================Q10=============");
-let num = 115;
-if (arrayNumber.includes(num)){
-  console.log(`number ${num}is in array`);
-}else{
-  console.log(`number ${num} is not in array`);
-}
-
-console.log("==========================Q11=============");
-let num2 = 23;
-if (arrayNumber.includes(num2)){
-  console.log(`number ${num2} is in array`);
-}else{
-  console.log(`number ${num2} is not in array`);
-}
-
-console.log("==========================Q12=============");
-arrayNumber.splice(3,0,55,56)
-console.log(arrayNumber);
-
-console.log("==========================Q13=============");
-arrayNumber.splice(4,3)
-console.log(arrayNumber);
