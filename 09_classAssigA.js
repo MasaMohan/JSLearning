@@ -103,3 +103,9 @@ traverseObject(college3);
 console.log("=====================================");
 console.log('Traversing College 4:');
 traverseObject(college4);
+
+
+console.log(college4 instanceof College);
+
+
+console.log(college4 instanceof Vehicle);
