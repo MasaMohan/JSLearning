@@ -10,6 +10,8 @@ function isPrime(num) {
     }
   }
   return true;
+
+  
 }
 
 const primeNumbers = array.filter(isPrime);
