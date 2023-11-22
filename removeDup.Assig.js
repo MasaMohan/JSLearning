@@ -19,3 +19,4 @@ for (let i = 0; i < words.length; i++) {
 
 console.log("Array with duplicates removed:", uniqueArray);
 console.log("Transformed String:", transformedStr.trim());
+
