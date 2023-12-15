@@ -17,8 +17,6 @@ var voteEligible = function(age){
     }
 
 
-
-
 }
 voteEligible(45);
 voteEligible(17);

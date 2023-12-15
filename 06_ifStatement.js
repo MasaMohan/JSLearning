@@ -26,3 +26,40 @@ if (elonAge>=18) {
     console.log(`Try next time please `);
     
 }
+
+
+const array = [1,2,3,4,5,6,7];
+
+function even(){
+
+    if (array %2==0) {
+      console.log(`  Even num`);
+        
+    } else {console.log(`
+    odd num`);
+        
+    }
+
+
+};
+even(array)
+
+
+console.log(`***********************************************************************************************`);
+
+function getEvenNumbers(array2) {
+    const evenNumbers = [];
+  
+    for (let i = 0; i < array.length; i++) {
+      if (array2[i] %2!==0) {
+        evenNumbers.push(array2[i]);
+      }
+    }
+  
+    return evenNumbers;
+  }
+  
+  const array2 = [1, 2, 3, 4, 5, 6, 7];
+  const evenNumbersArray = getEvenNumbers(array2);
+  
+  console.log("Even numbers:", evenNumbersArray);
